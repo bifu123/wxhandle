@@ -25,9 +25,9 @@ handler.sendTextMsg("cbf_415135222", "hello")
 python test.py
 ```
 结果：
-[发消息](images/1.png)
+![发消息](images/1.png)
 
-[发消息](images/1.jpg)
+![发消息](images/1.jpg)
 
 ### 获取消息
 新建文件flask_server.py
@@ -41,7 +41,7 @@ app = Flask(__name__)
 base_url = "http://127.0.0.1:19088"
 
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/', methods=!['GET', 'POST'])
 def receive_message():
     # 获取原始的请求数据
     message_data = request.data
@@ -64,12 +64,12 @@ if __name__ == '__main__':
 ```bash
 python flask_server.py
 ```
-[运行flask](images/2.png)
+![运行flask](images/2.png)
 
 从微信里发消息：
-[发消息](images/3.jpg)
+![发消息](images/3.jpg)
 
 flask里监听到了消息：
-[flask](images/4.png)
+![flask](images/4.png)
 
 资源获取和交流：QQ群222302526
